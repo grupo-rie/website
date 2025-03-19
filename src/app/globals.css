@@ -3,6 +3,7 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  --background-img: url("/images/comming-soon/bg.png");
 }
 
 @theme inline {
@@ -20,7 +21,14 @@
 }
 
 body {
-  background: var(--background);
+  background-image: var(--background-img);
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+}
+
+.img-animation {
+  width: 50%;
 }
